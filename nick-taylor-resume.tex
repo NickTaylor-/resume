@@ -1,0 +1,169 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{5pt}
+
+\urlstyle{same}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{description}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{description}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+% Heading
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Nick Taylor} & \href{mailto:nick@nicktaylor.ca}{nick@nicktaylor.ca}\\
+  \href{https://www.nicktaylor.ca/}{https://www.nicktaylor.ca} & Ottawa, Ontario
+\end{tabular*}
+
+% Education
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Athabasca University}{Remote}
+      {Bachelor of Science, Computing and Information Systems}{2016 - Present}
+    \resumeSubheading
+      {University of Calgary}{Calgary, Alberta}
+      {Bachelor of Science, Computer Science}{2014 - 2016}
+  \resumeSubHeadingListEnd
+
+% Experience
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shopify}{Ottawa, Ontario}
+      {Internal Security Developer}{June 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Development}
+          {Developed a Ruby on Rails application to handle authentication and authorization of internal systems. Running in-line for all requests handling upwards of 100 000 requests per minute, with a p99 response time of 10ms.}
+        \resumeItem{People Leadership \& Mentoring}
+          {Developed interns through both the regular intern stream, as well as part of \href{https://www.devdegree.ca/}{Shopify's Dev Degree program}.}
+        \resumeItem{Technical Leadership}
+          {Subject matter expert for internal and external authentication and authorization systems, led authorization team for the onboarding of regulated industries onto Shopify's platform.}
+        \resumeItem{Zero Trust}
+          {Developed internal system to support a zero-trust security system for thousands of employees across dozens of countries.}
+
+      \resumeItemListEnd
+    \resumeSubSubheading
+      {Internal Security Analyst}{October 2017 - May 2018}
+      \resumeItemListStart
+        \resumeItem{Development}
+          {Developed transparency application for employees to understand the data collected by Shopify's enterprise device management solution.}
+        \resumeItem{Device Security}
+          {Led Device Security initiative to standardize threat models for employee devices and created device tiering model to support BYOD program.}
+        \resumeItem{Identity Security}
+          {Overhauled an internal meta-identity management system that supported applications for which we did not have SSO support for (e.g. GitHub)}
+      \resumeItemListEnd
+    \bigskip
+    \resumeSubheading
+      {Telus}{Calgary, Alberta}
+      {Security Analyst II}{January 2017 - Sep 2017}
+      \resumeItemListStart
+        \resumeItem{Development}
+          {Developed automation systems for incident response, including a machine learning system for classifying and responding to internally-targeted phishing campaigns}
+        \resumeItem{Malware Reverse Engineering}
+          {Reverse engineered malware targeted at Telus employees to determine capabilities, source, and target.}
+      \resumeItemListEnd
+    \resumeSubSubheading
+      {Security Analyst I}{June 2015 - December 2016}
+      \resumeItemListStart
+        \resumeItem{Incident Response}
+          {Responded to and managed incidents relating to internal systems.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Projects
+\section{Projects}
+  All projects can be viewed at \href{https://www.nicktaylor.ca/projects}{https://www.nicktaylor.ca/projects}.
+  \resumeItemListStart
+    \resumeSubItem {Sorting Algorithm Visualization}
+      {A visualization tool for different sorting algorithms.}
+    \resumeSubItem {Stackless EVEmu}
+      {A partial rewrite of the \href{https://github.com/evemuproject/evemu_server}{EVEmu EVE Online server} written in Stackless Python, and based on reverse engineering of the EVE Online client.}
+    \resumeSubItem{Trawler}
+      {A simple Python Flask application to help ingest and manage phishing reports for SOC teams.}
+  \resumeItemListEnd
+
+% Projects
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Making Technical Decisions}{Ottawa, Ontario}
+      {Shopify Summit}{2019}
+    \resumeSubheading
+      {Automating Malware Analysis}{Calgary, Alberta}
+      {BSides Calgary}{2017}
+    \resumeSubheading
+      {Reverse Engineering MMOs for Questionable Fun and No Profit}{Calgary, Alberta}
+      {c0wsec}{2017}
+  \resumeSubHeadingListEnd
+
+\end{document}
