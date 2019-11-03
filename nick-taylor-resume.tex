@@ -19,9 +19,9 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
+\addtolength{\oddsidemargin}{-0.25in}
+\addtolength{\evensidemargin}{-0.25in}
+\addtolength{\textwidth}{0.5in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 \setlength{\footskip}{5pt}
@@ -57,11 +57,11 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -87,7 +87,7 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Athabasca University}{Remote}
+      {Athabasca University}{Correspondence}
       {Bachelor of Science, Computing and Information Systems}{2016 - Present}
     \resumeSubheading
       {University of Calgary}{Calgary, Alberta}
@@ -104,7 +104,7 @@
       \resumeItemListStart
         \resumeItem{Development}
           {Developed a Ruby on Rails application to handle authentication and authorization of internal systems. Running in-line for all requests handling upwards of 100 000 requests per minute, with a p99 response time of 10ms.}
-        \resumeItem{People Leadership \& Mentoring}
+        \resumeItem{Mentoring \& People Leadership}
           {Developed interns through both the regular intern stream, as well as part of \href{https://www.devdegree.ca/}{Shopify's Dev Degree program}.}
         \resumeItem{Technical Leadership}
           {Subject matter expert for internal and external authentication and authorization systems, led authorization team for the onboarding of regulated industries onto Shopify's platform.}
@@ -120,15 +120,15 @@
         \resumeItem{Device Security}
           {Led Device Security initiative to standardize threat models for employee devices and created device tiering model to support BYOD program.}
         \resumeItem{Identity Security}
-          {Overhauled an internal meta-identity management system that supported applications for which we did not have SSO support for (e.g. GitHub)}
+          {Overhauled an internal meta-identity management system that supported applications for which we did not have SSO support for (e.g. GitHub).}
       \resumeItemListEnd
-    \bigskip
+    \vspace{3pt}
     \resumeSubheading
       {Telus}{Calgary, Alberta}
       {Security Analyst II}{January 2017 - Sep 2017}
       \resumeItemListStart
         \resumeItem{Development}
-          {Developed automation systems for incident response, including a machine learning system for classifying and responding to internally-targeted phishing campaigns}
+          {Developed automation systems for incident response, including a machine learning system for classifying and responding to internally-targeted phishing campaigns.}
         \resumeItem{Malware Reverse Engineering}
           {Reverse engineered malware targeted at Telus employees to determine capabilities, source, and target.}
       \resumeItemListEnd
